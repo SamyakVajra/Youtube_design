@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>position practice</title>
+
+    <style>
+      .absolute{
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+
+      }
+
+      .x{
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+      }
+
+      .time{
+        background-color: black;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+
+
+      }
+    </style>
+  </head>
+
+  <body style="height: 3000px;
+  padding-top:50px;
+  padding-left:80px;">
+
+
+    <div style="background-color:green;
+    color:white;
+    position:fixed;
+    top: 50px;
+    left:0;
+    bottom:0;
+    width:72px;
+    ">sidebar
+      <div class="x">
+        X
+      </div>
+  
+  
+  </div>
+
+
+
+    <div style="
+    background-color: black;
+    color:white;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:50px;
+    z-index:1;
+    
+    ">header</div>
+
+    <div class="absolute">
+      absolute
+    </div>
+
+    <div style="    
+    background-color: lightblue;
+    height:200px;
+    width:200px;">
+      div1
+
+    </div>
+
+    <div style="
+    background-color: lightpink;
+    height:200px;
+    width:200px;
+    position:relative;
+    ">
+      div2
+
+      <div class="time">
+        5:00
+      </div>
+    </div>
+  </body>
+</html>
